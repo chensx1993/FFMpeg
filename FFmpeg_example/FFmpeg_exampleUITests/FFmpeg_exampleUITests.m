@@ -2,7 +2,7 @@
 //  FFmpeg_exampleUITests.m
 //  FFmpeg_exampleUITests
 //
-//  Created by hsbcnet.mobile.uk hsbcnet.mobile.uk on 2019/5/27.
+//  Created by chensx on 2019/5/27.
 //  Copyright © 2019 chensx. All rights reserved.
 //
 

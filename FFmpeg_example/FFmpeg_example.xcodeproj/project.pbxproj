@@ -13,6 +13,9 @@
 		2B352D5322AF858000726CEC /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B352D4D22AF858000726CEC /* libswresample.a */; };
 		2B352D5422AF858000726CEC /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B352D4E22AF858000726CEC /* libavformat.a */; };
 		2B352D5522AF858000726CEC /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B352D4F22AF858000726CEC /* libavutil.a */; };
+		2B352D5922AF897000726CEC /* YUV.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B352D5822AF897000726CEC /* YUV.md */; };
+		2B352D5C22AF8EB500726CEC /* YUVHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B352D5B22AF8EB500726CEC /* YUVHandler.m */; };
+		2B352D5F22AF99C900726CEC /* akiyo_cif.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */; };
 		2BBEAEDA229BEFA100406BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEAED9229BEFA100406BD2 /* AppDelegate.m */; };
 		2BBEAEDD229BEFA100406BD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEAEDC229BEFA100406BD2 /* ViewController.m */; };
 		2BBEAEE0229BEFA100406BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBEAEDE229BEFA100406BD2 /* Main.storyboard */; };
@@ -55,6 +58,10 @@
 		2B352D4D22AF858000726CEC /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../ffmpeg_universal/lib/libswresample.a; sourceTree = "<group>"; };
 		2B352D4E22AF858000726CEC /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../ffmpeg_universal/lib/libavformat.a; sourceTree = "<group>"; };
 		2B352D4F22AF858000726CEC /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../ffmpeg_universal/lib/libavutil.a; sourceTree = "<group>"; };
+		2B352D5822AF897000726CEC /* YUV.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = YUV.md; sourceTree = "<group>"; };
+		2B352D5A22AF8EB500726CEC /* YUVHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUVHandler.h; sourceTree = "<group>"; };
+		2B352D5B22AF8EB500726CEC /* YUVHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUVHandler.m; sourceTree = "<group>"; };
+		2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = akiyo_cif.yuv; sourceTree = "<group>"; };
 		2BBEAED5229BEFA100406BD2 /* FFmpeg_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpeg_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBEAED8229BEFA100406BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BBEAED9229BEFA100406BD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +133,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B352D5722AF87A100726CEC /* YUV */ = {
+			isa = PBXGroup;
+			children = (
+				2B352D5822AF897000726CEC /* YUV.md */,
+				2B352D5A22AF8EB500726CEC /* YUVHandler.h */,
+				2B352D5B22AF8EB500726CEC /* YUVHandler.m */,
+			);
+			path = YUV;
+			sourceTree = "<group>";
+		};
+		2B352D5D22AF99C900726CEC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */,
+			);
+			name = source;
+			path = ../../source;
+			sourceTree = "<group>";
+		};
 		2BBEAECC229BEFA100406BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +176,8 @@
 		2BBEAED7229BEFA100406BD2 /* FFmpeg_example */ = {
 			isa = PBXGroup;
 			children = (
+				2B352D5D22AF99C900726CEC /* source */,
+				2B352D5722AF87A100726CEC /* YUV */,
 				2BBEAED8229BEFA100406BD2 /* AppDelegate.h */,
 				2BBEAED9229BEFA100406BD2 /* AppDelegate.m */,
 				2BBEAEDB229BEFA100406BD2 /* ViewController.h */,
@@ -312,6 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BBEAEE5229BEFA200406BD2 /* LaunchScreen.storyboard in Resources */,
+				2B352D5F22AF99C900726CEC /* akiyo_cif.yuv in Resources */,
+				2B352D5922AF897000726CEC /* YUV.md in Resources */,
 				2BBEAEE2229BEFA200406BD2 /* Assets.xcassets in Resources */,
 				2BBEAEE0229BEFA100406BD2 /* Main.storyboard in Resources */,
 			);
@@ -339,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BBEAEDD229BEFA100406BD2 /* ViewController.m in Sources */,
+				2B352D5C22AF8EB500726CEC /* YUVHandler.m in Sources */,
 				2BBEAEE8229BEFA200406BD2 /* main.m in Sources */,
 				2BBEAEDA229BEFA100406BD2 /* AppDelegate.m in Sources */,
 			);
