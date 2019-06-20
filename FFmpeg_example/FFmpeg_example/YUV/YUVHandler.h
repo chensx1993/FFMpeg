@@ -20,7 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
  * @param num  Number of frames to process.
  *
  */
-void simplest_yuv420_split(char *url, int w, int h,int num);
+int simplest_yuv420_split(const char *url, int w, int h,int num);
+
+int simplest_yuv420_gray(const char *url, int w, int h, int num);
 
 @end
 
