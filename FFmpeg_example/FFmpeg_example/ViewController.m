@@ -18,8 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    char *url = (const char*)[[NSBundle mainBundle] pathForResource:@"akiyo_cif" ofType:@"yuv"].UTF8String;
-    simplest_yuv420_split(url, 256, 256, 1);
+    // 说明：yuv文件里面没有格式的标志，所以需要提前预知其宽高和格式，然后再解析
+    
+    const char *url = (const char*)[[NSBundle mainBundle] pathForResource:@"lena_256x256_yuv420p" ofType:@"yuv"].UTF8String;
+    simplest_yuv420_split((char *)url, 256, 256, 1);
 }
 
 

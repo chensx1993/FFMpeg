@@ -15,7 +15,6 @@
 		2B352D5522AF858000726CEC /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B352D4F22AF858000726CEC /* libavutil.a */; };
 		2B352D5922AF897000726CEC /* YUV.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B352D5822AF897000726CEC /* YUV.md */; };
 		2B352D5C22AF8EB500726CEC /* YUVHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B352D5B22AF8EB500726CEC /* YUVHandler.m */; };
-		2B352D5F22AF99C900726CEC /* akiyo_cif.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */; };
 		2BBEAEDA229BEFA100406BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEAED9229BEFA100406BD2 /* AppDelegate.m */; };
 		2BBEAEDD229BEFA100406BD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEAEDC229BEFA100406BD2 /* ViewController.m */; };
 		2BBEAEE0229BEFA100406BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBEAEDE229BEFA100406BD2 /* Main.storyboard */; };
@@ -32,6 +31,10 @@
 		2BBEAF22229BF00C00406BD2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBEAF21229BF00C00406BD2 /* CoreVideo.framework */; };
 		2BBEAF24229BF01300406BD2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBEAF23229BF01300406BD2 /* CoreMedia.framework */; };
 		2BBEAF26229BF01A00406BD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBEAF25229BF01A00406BD2 /* SystemConfiguration.framework */; };
+		2BFF6F3622BB8F6500CBA86C /* lena_256x256_yuv420p.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF6F3222BB8F6500CBA86C /* lena_256x256_yuv420p.yuv */; };
+		2BFF6F3722BB8F6500CBA86C /* lena_256x256_yuv444p.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF6F3322BB8F6500CBA86C /* lena_256x256_yuv444p.yuv */; };
+		2BFF6F3822BB8F6500CBA86C /* akiyo_cif.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF6F3422BB8F6500CBA86C /* akiyo_cif.yuv */; };
+		2BFF6F3922BB8F6500CBA86C /* lena_256x256_yuv422p.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF6F3522BB8F6500CBA86C /* lena_256x256_yuv422p.yuv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,6 @@
 		2B352D5822AF897000726CEC /* YUV.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = YUV.md; sourceTree = "<group>"; };
 		2B352D5A22AF8EB500726CEC /* YUVHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YUVHandler.h; sourceTree = "<group>"; };
 		2B352D5B22AF8EB500726CEC /* YUVHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUVHandler.m; sourceTree = "<group>"; };
-		2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = akiyo_cif.yuv; sourceTree = "<group>"; };
 		2BBEAED5229BEFA100406BD2 /* FFmpeg_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpeg_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBEAED8229BEFA100406BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BBEAED9229BEFA100406BD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +94,10 @@
 		2BBEAF21229BF00C00406BD2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		2BBEAF23229BF01300406BD2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2BBEAF25229BF01A00406BD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BFF6F3222BB8F6500CBA86C /* lena_256x256_yuv420p.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lena_256x256_yuv420p.yuv; sourceTree = "<group>"; };
+		2BFF6F3322BB8F6500CBA86C /* lena_256x256_yuv444p.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lena_256x256_yuv444p.yuv; sourceTree = "<group>"; };
+		2BFF6F3422BB8F6500CBA86C /* akiyo_cif.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = akiyo_cif.yuv; sourceTree = "<group>"; };
+		2BFF6F3522BB8F6500CBA86C /* lena_256x256_yuv422p.yuv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lena_256x256_yuv422p.yuv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,15 +149,6 @@
 			path = YUV;
 			sourceTree = "<group>";
 		};
-		2B352D5D22AF99C900726CEC /* source */ = {
-			isa = PBXGroup;
-			children = (
-				2B352D5E22AF99C900726CEC /* akiyo_cif.yuv */,
-			);
-			name = source;
-			path = ../../source;
-			sourceTree = "<group>";
-		};
 		2BBEAECC229BEFA100406BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +173,7 @@
 		2BBEAED7229BEFA100406BD2 /* FFmpeg_example */ = {
 			isa = PBXGroup;
 			children = (
-				2B352D5D22AF99C900726CEC /* source */,
+				2BFF6F3122BB8F6500CBA86C /* source */,
 				2B352D5722AF87A100726CEC /* YUV */,
 				2BBEAED8229BEFA100406BD2 /* AppDelegate.h */,
 				2BBEAED9229BEFA100406BD2 /* AppDelegate.m */,
@@ -234,6 +231,18 @@
 				2BBEAF0D229BEFD800406BD2 /* libswscale.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BFF6F3122BB8F6500CBA86C /* source */ = {
+			isa = PBXGroup;
+			children = (
+				2BFF6F3422BB8F6500CBA86C /* akiyo_cif.yuv */,
+				2BFF6F3222BB8F6500CBA86C /* lena_256x256_yuv420p.yuv */,
+				2BFF6F3322BB8F6500CBA86C /* lena_256x256_yuv444p.yuv */,
+				2BFF6F3522BB8F6500CBA86C /* lena_256x256_yuv422p.yuv */,
+			);
+			name = source;
+			path = ../../source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,10 +348,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFF6F3722BB8F6500CBA86C /* lena_256x256_yuv444p.yuv in Resources */,
+				2BFF6F3622BB8F6500CBA86C /* lena_256x256_yuv420p.yuv in Resources */,
 				2BBEAEE5229BEFA200406BD2 /* LaunchScreen.storyboard in Resources */,
-				2B352D5F22AF99C900726CEC /* akiyo_cif.yuv in Resources */,
+				2BFF6F3822BB8F6500CBA86C /* akiyo_cif.yuv in Resources */,
 				2B352D5922AF897000726CEC /* YUV.md in Resources */,
 				2BBEAEE2229BEFA200406BD2 /* Assets.xcassets in Resources */,
+				2BFF6F3922BB8F6500CBA86C /* lena_256x256_yuv422p.yuv in Resources */,
 				2BBEAEE0229BEFA100406BD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
